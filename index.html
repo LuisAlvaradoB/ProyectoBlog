@@ -19,10 +19,10 @@
             <h2><span itemprop="title">Social Media Strategist & Manager</span></h2>
             <nav>
               <ul>
-                <li> <a href="index.html">Inicio</a></li>
-                <li> <a href="noticias.html">Noticias</a></li>
-                <li> <a href="sobremi.html">Sobre mí</a></li>
-                <li> <a href="conatcto.html">Contacto</a></li>
+                <li><canvas id="iconoInicio" width="50px" height="50px" style="border:1px solid black;"></canvas> <a href="index.html">Inicio</a></li>
+                <li><canvas id="iconoNoticias" width="50px" height="50px" style="border:1px solid black;"></canvas> <a href="noticias.html">Noticias</a></li>
+                <li><canvas id="iconoSobreMi" width="50px"height="50px" style="border:1px solid black;"></canvas> <a href="sobremi.html">Sobre mí</a></li>
+                <li><canvas id="iconoContacto" width="50px"height="50px" style="border:1px solid black;"></canvas> <a href="conatcto.html">Contacto</a></li>
               </ul>
             </nav>
           </heder>
@@ -127,6 +127,16 @@
 
             </script>
 
+            <script type="text/javascript">
+              if(sessionStore.pagecount){
+                sessionStore.pagecount=Number(sessionStore.pagecount)+1;
+                document.write("En esta sesión, has visitado mi página :" + sessionStore.pagecount + " veces");
+              }
+              else {
+                sessionStore.pagecount=1;
+              }
+            </script>
+
           </footer>
 
         </div>
@@ -135,3 +145,5 @@
     </body>
 
   </html>
+
+  <script type="text/javascript" src="canvas.js"></script>
