@@ -1,0 +1,24 @@
+/* Fuentes personalizadas */
+
+@font-face {
+  font-family: ubuntuRegular;
+  src: url(fuentes/Ubuntu-R.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: ubuntuBold;
+  src: url(fuentes/Ubuntu-B.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: ubuntuBoldItalic;
+  src: url(fuentes/Ubuntu-BI.ttf) format('truetype');
+}
+
+/* Estilos básicos */
+h1,h2,h3,h4,h5,h6{
+  font-family: ubuntuBold;
+}
+p{
+  font-family: ubuntuRegular;
+}
