@@ -15,27 +15,56 @@
   src: url(fuentes/Ubuntu-BI.ttf) format('truetype');
 }
 
+/*------------------------------------------------------------------------*/
+
 /* Estilos básicos */
+
 h1,h2,h3,h4,h5,h6{
   font-family: ubuntuBold;
 }
+
+h1,h2{
+  transform: translate(150px 0px);
+  position: relative;
+  color: black;
+  font-size: 40px;
+  top: -20%;
+  margin-top: 10px;
+  letter-spacing: 0px;
+  display: inline;
+}
+
 p{
   font-family: ubuntuRegular;
 }
 
+#psobremi{
+  font-family: ubuntuRegular;
+  font-size: 15px;
+  margin-top: 30px;
+  padding-right: 20px;
+  padding-left: 130px;
+}
+
+/*------------------------------------------------------------------------*/
+
 /*Maquetación Principal */
+
 body{
   text-align: left;
   margin: 0px;
   background: lightgray;
+  background: url('../img/fondo5.jpg');
 }
 
 #principal{
+  text-align: left;
   margin:auto;
   width: 80%;
-
-  background: gray;
+  height: 100px;
   position: relative;
+
+
 
 }
 
@@ -43,7 +72,7 @@ body{
   width: 100%;
   height: 100px;
   position: absolute;
-  background: darkgray;
+  background: rgba(255,255,255,0.5);
 }
 
 header{
@@ -52,42 +81,313 @@ header{
   width: 100%;
   height: 100px;
 
-  background: darkgray;
+  /*background: darkgray;*/
   overflow: hidden;
 
-  border: 2px solid white;
-  border-radius: 20px
-}
+  border: 2px solid black;
+  border-radius: 5px 35px 0px 0px;
+  box-shadow: 0px 0px 10px black;
+  /*border-radius: 15px*/
 
+}
 
 footer{
   margin: auto;
   text-align: center;
   background: darkgray;
   width: 100%;
+  border: 2px solid black;
+  border-radius: 0px 0px 5px 35px;
+  box-shadow: 0px 0px 10px black;
 }
+
+/*------------------------------------------------------------------------*/
+
+/*Menu de navegacion*/
+nav{
+  display: inline;
+  float: right;
+  margin: 20px;
+}
+
+nav ul{
+  font-size: 12px;
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: grey;
+  color: white;
+  width: 50%;
+  font-family: ubuntuRegular;
+  position: relative;
+  display: inline;
+}
+
+nav ul li{
+  display: inline;
+  text-align: center;
+}
+
+nav ul li a{
+  background: grey;
+  color: white;
+  text-decoration: none;
+  float: right;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 5px white;
+  width: 55px;
+}
+
+nav ul li a:hover{
+  background: white;
+  color: black;
+  box-shadow: 0px 0px 25px white;
+}
+
+canvas{
+  border: 0px solid white;
+
+}
+
+
+
+#logo{
+  width: 100px;
+  height: 100px;
+  display: inline;
+  position: relative;
+}
+
+
+
 
 /*Maquetación Contenido */
 
 #contenido{
   width: 100%;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px black;
+  background: rgba(255,255,255,0.5);
 }
 
 article{
-  width: 50%;
-  background: white;
+  width: 60%;
+  /*background: white;*/
+  background: rgba(255,255,255,0);
+
+  display: table;
+  /*float: left;*/
+  margin: 10px;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 0px 25px 0px 25px;
+  box-shadow: 3px 3px 10px black;
+  padding: 10px 10px 10px 150px;
+  opacity: 0.5;
+  transition: opacity 1s,box-shadow 1s,transform 1s, background 1s;
+  transform: scale(1,1);
 }
+
+
+
+article:hover{
+  background: rgba(255,255,255,1);
+  box-shadow: 0px 0px 25px white;
+  opacity: 1;
+  transform: scale(1.1,1.1);
+}
+
+time{
+  font-family: ubuntuRegular;
+  font-size: 10px;
+}
+
+
+
 
 aside{
   float: right;
   display: inline-table;
-  width: 40%;
-  background: white;
+  width: 20%;
+  /*background: white;*/
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 0px 25px 0px 25px;
+  box-shadow: 3px 3px 10px black;
+}
 
+aside ul{
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+  float: left;
+  font-family: ubuntuRegular;
+  font-size: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+aside ul li{
+  width: 100%;
+  text-decoration: none;
+  border-radius: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+
+aside ul li a{
+  width: 100%auto;
+  height: 30px;
+  overflow: hidden;
+  text-decoration: none;
 }
 
 #sobremi{
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 120%;
   background: blue;
+  color: white;
+  background: black;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: justify;
+  overflow: hidden;
+  display: table;
+
+}
+
+#sobremi a{
+  color: white;
+  text-decoration: none;
+}
+
+#mifoto{
+  width: 100px;
+  height: 100px;
+  font-family: ubuntuBold;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-image: url('../photo/luisalvaradobarraza.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: box;
+
+  border: 1px solid white;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 10px white;
+
+  float: left;
+  margin: 10px;
+  animation: parpadeo 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo{
+  0%{
+    box-shadow: 0px 0px 10px white;
+  }
+  50%{
+    box-shadow: 0px 0px 50px white;
+  }
+  100%{
+    box-shadow: 0px 0px 10px white;
+  }
+}
+
+
+/*------------------------------------------------------------------------*/
+/*Logos para los articulos*/
+
+#logostark{
+  width: 100px;
+  height: 100px;
+  font-family: ubuntuBold;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-image: url('../photo/logostark.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: box;
+
+  border: 1px solid white;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 10px white;
+
+  float: left;
+  margin: 10px;
+
+  position: absolute;
+  transform: translate(-140px,0px);
+}
+
+#logolannister{
+  width: 100px;
+  height: 100px;
+  font-family: ubuntuBold;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-image: url('../photo/logolannister.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: box;
+
+  border: 1px solid white;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 10px white;
+
+  float: left;
+  margin: 10px;
+
+  position: absolute;
+  transform: translate(-140px,0px);
+}
+
+#logotargaryen{
+  width: 100px;
+  height: 100px;
+  font-family: ubuntuBold;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-image: url('../photo/logotargaryen.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: box;
+
+  border: 1px solid white;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 10px white;
+
+  float: left;
+  margin: 10px;
+
+  position: absolute;
+  transform: translate(-140px,0px);
+}
+
+#logotyrell{
+  width: 100px;
+  height: 100px;
+  font-family: ubuntuBold;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-image: url('../photo/logotyrell.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: box;
+
+  border: 1px solid white;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 10px white;
+
+  float: left;
+  margin: 10px;
+
+  position: absolute;
+  transform: translate(-140px,0px);
 }
