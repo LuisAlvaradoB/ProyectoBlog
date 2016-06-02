@@ -169,6 +169,7 @@ canvas{
 article{
   width: 60%;
   /*background: white;*/
+  background: rgba(255,255,255,0);
 
   display: table;
   /*float: left;*/
@@ -179,13 +180,14 @@ article{
   box-shadow: 3px 3px 10px black;
   padding: 10px 10px 10px 150px;
   opacity: 0.5;
-  transition: opacity 1s,box-shadow 1s,transform 1s;
+  transition: opacity 1s,box-shadow 1s,transform 1s, background 1s;
   transform: scale(1,1);
 }
 
 
 
 article:hover{
+  background: rgba(255,255,255,1);
   box-shadow: 0px 0px 25px white;
   opacity: 1;
   transform: scale(1.1,1.1);
