@@ -277,6 +277,20 @@ aside ul li a{
 
   float: left;
   margin: 10px;
+  animation: parpadeo 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo{
+  0%{
+    box-shadow: 0px 0px 10px white;
+  }
+  50%{
+    box-shadow: 0px 0px 50px white;
+  }
+  100%{
+    box-shadow: 0px 0px 10px white;
+  }
 }
 
 
