@@ -267,6 +267,100 @@ aside ul li a{
 
   float: left;
   margin: 10px;
+}
 
 
+/*------------------------------------------------------------------------*/
+/*Logos para los articulos*/
+
+#logostark{
+  width: 100px;
+  height: 100px;
+  font-family: ubuntuBold;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-image: url('../photo/logostark.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: box;
+
+  border: 1px solid white;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 10px white;
+
+  float: left;
+  margin: 10px;
+
+  position: absolute;
+  transform: translate(-140px,0px);
+}
+
+#logolannister{
+  width: 100px;
+  height: 100px;
+  font-family: ubuntuBold;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-image: url('../photo/logolannister.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: box;
+
+  border: 1px solid white;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 10px white;
+
+  float: left;
+  margin: 10px;
+
+  position: absolute;
+  transform: translate(-140px,0px);
+}
+
+#logotargaryen{
+  width: 100px;
+  height: 100px;
+  font-family: ubuntuBold;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-image: url('../photo/logotargaryen.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: box;
+
+  border: 1px solid white;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 10px white;
+
+  float: left;
+  margin: 10px;
+
+  position: absolute;
+  transform: translate(-140px,0px);
+}
+
+#logotyrell{
+  width: 100px;
+  height: 100px;
+  font-family: ubuntuBold;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-image: url('../photo/logotyrell.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: box;
+
+  border: 1px solid white;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 10px white;
+
+  float: left;
+  margin: 10px;
+
+  position: absolute;
+  transform: translate(-140px,0px);
 }
