@@ -15,7 +15,10 @@
   src: url(fuentes/Ubuntu-BI.ttf) format('truetype');
 }
 
+/*------------------------------------------------------------------------*/
+
 /* Estilos básicos */
+
 h1,h2,h3,h4,h5,h6{
   font-family: ubuntuBold;
 }
@@ -24,7 +27,7 @@ h1,h2{
   transform: translate(150px 0px);
   position: relative;
   color: white;
-  font-size: 23px;
+  font-size: 40px;
   top: -20%;
   margin-top: 10px;
   letter-spacing: 0px;
@@ -35,7 +38,18 @@ p{
   font-family: ubuntuRegular;
 }
 
+#psobremi{
+  font-family: ubuntuRegular;
+  font-size: 15px;
+  margin-top: 30px;
+  padding-right: 20px;
+  padding-left: 130px;
+}
+
+/*------------------------------------------------------------------------*/
+
 /*Maquetación Principal */
+
 body{
   text-align: left;
   margin: 0px;
@@ -59,7 +73,33 @@ body{
   background: darkgray;
 }
 
+header{
+  margin: auto;
+  text-align: left;
+  width: 100%;
+  height: 100px;
 
+  background: darkgray;
+  overflow: hidden;
+
+  border: 2px solid white;
+  border-radius: 5px 35px 0px 0px;
+  box-shadow: 0px 0px 10px white;
+  /*border-radius: 15px*/
+
+}
+
+footer{
+  margin: auto;
+  text-align: center;
+  background: darkgray;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 0px 0px 5px 35px;
+  box-shadow: 0px 0px 10px white;
+}
+
+/*------------------------------------------------------------------------*/
 
 /*Menu de navegacion*/
 nav{
@@ -92,6 +132,7 @@ nav ul li a{
   float: right;
   border-radius: 0px 10px 0px 10px;
   box-shadow: 0px 0px 5px white;
+  width: 55px;
 }
 
 nav ul li a:hover{
@@ -100,21 +141,12 @@ nav ul li a:hover{
   box-shadow: 0px 0px 25px white;
 }
 
-header{
-  margin: auto;
-  text-align: left;
-  width: 100%;
-  height: 100px;
-
-  background: darkgray;
-  overflow: hidden;
-
-  border: 2px solid white;
-  border-radius: 5px 35px 0px 0px;
-  box-shadow: 1px 1px 1px 1px white;
-  /*border-radius: 15px*/
+canvas{
+  border: 0px solid white;
 
 }
+
+
 
 #logo{
   width: 100px;
@@ -124,15 +156,7 @@ header{
 }
 
 
-footer{
-  margin: auto;
-  text-align: center;
-  background: darkgray;
-  width: 100%;
-  border: 2px solid white;
-  border-radius: 0px 0px 5px 35px;
-  box-shadow: 0px 0px 10px white;
-}
+
 
 /*Maquetación Contenido */
 
@@ -207,7 +231,42 @@ aside ul li a{
 }
 
 #sobremi{
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 120%;
   background: blue;
+  color: white;
+  background: black;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: justify;
+  overflow: hidden;
+  display: table;
+
+}
+
+#sobremi a{
+  color: white;
+  text-decoration: none;
+}
+
+#mifoto{
+  width: 100px;
+  height: 100px;
+  font-family: ubuntuBold;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  background-image: url('../photo/luisalvaradobarraza.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: box;
+
+  border: 1px solid white;
+  border-radius: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 10px white;
+
+  float: left;
+  margin: 10px;
+
+
 }
