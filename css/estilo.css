@@ -143,14 +143,34 @@ footer{
 }
 
 article{
-  width: 50%;
-  background: white;
+  width: 65%;
+  /*background: white;*/
+
+  display: table;
+  /*float: left;*/
+  margin: 10px;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 0px 25px 0px 25px;
+  box-shadow: 3px 3px 10px black;
+  padding: 10px 10px 10px 150px;
+}
+
+time{
+  font-family: ubuntuRegular;
+  font-size: 10px;
+}
+
+
+
+article:hover{
+  box-shadow: 0px 0px 25px white;
 }
 
 aside{
   float: right;
   display: inline-table;
-  width: 40%;
+  width: 20%;
   background: white;
 
 }
