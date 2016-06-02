@@ -143,7 +143,7 @@ footer{
 }
 
 article{
-  width: 65%;
+  width: 60%;
   /*background: white;*/
 
   display: table;
@@ -171,8 +171,39 @@ aside{
   float: right;
   display: inline-table;
   width: 20%;
-  background: white;
+  /*background: white;*/
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 0px 25px 0px 25px;
+  box-shadow: 3px 3px 10px black;
+}
 
+aside ul{
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+  float: left;
+  font-family: ubuntuRegular;
+  font-size: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+aside ul li{
+  width: 100%;
+  text-decoration: none;
+  border-radius: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+
+aside ul li a{
+  width: 100%auto;
+  height: 30px;
+  overflow: hidden;
+  text-decoration: none;
 }
 
 #sobremi{
