@@ -1,3 +1,10 @@
+@import url(menu.css);
+
+
+
+
+
+
 /* Fuentes personalizadas */
 
 @font-face {
@@ -40,7 +47,7 @@ p{
 
 #psobremi{
   font-family: ubuntuRegular;
-  
+
   font-size: 15px;
   margin-top: 30px;
   padding-right: 20px;
